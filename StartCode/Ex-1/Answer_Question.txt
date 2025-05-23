@@ -1,0 +1,25 @@
+Q1: When using the native HTTP module, some challenges include:
+- Complex routing setup requiring manual URL parsing
+- Need to handle request methods (GET, POST, etc.) explicitly
+- More verbose error handling
+- No built-in middleware support
+- Manual handling of request body parsing
+
+Q2: Express simplifies route handling compared to native HTTP server by:
+- Providing intuitive routing methods (app.get(), app.post(), etc.)
+- Built-in route parameter handling
+- Chain-able route handlers
+- Automatic header handling
+- Built-in support for different response types (json, send, etc.)
+
+Q3: Middleware in Express is:
+- Functions that have access to request, response objects and next function
+- Can modify request/response objects
+- Can end request-response cycle
+- Can call next middleware function
+
+To replicate middleware using native HTTP:
+- Would need to manually create a middleware chain
+- Implement custom function handling for each middleware step
+- Manually pass request/response objects between functions
+- Create your own next() function implementation
